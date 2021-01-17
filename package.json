@@ -1,0 +1,28 @@
+{
+  "name": "readme_generator",
+  "version": "1.0.0",
+  "description": "generates a readme file based on user input",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashattack/readme_generator.git"
+  },
+  "keywords": [
+    "readme",
+    "generator",
+    "file",
+    "github"
+  ],
+  "author": "Ashlyn Hicks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashattack/readme_generator/issues"
+  },
+  "homepage": "https://github.com/ashattack/readme_generator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
