@@ -1,4 +1,8 @@
 const generateMarkdown = require('./utils/generateMarkdown.js');
+const mit = require('./utils/mit.js');
+const apache = require('./utils/apache.js');
+const bsd = require('./utils/bsd.js');
+const gpl = require('./utils/gpl.js');
 
 const answers = {
     title: 'go away',
@@ -14,4 +18,8 @@ const answers = {
 
 
 const mkdn = generateMarkdown(answers)
+// const mkdn = mit(answers)
+// const mkdn = apache(answers);
+// const mkdn = bsd(answers);
+// const mkdn = gpl(answers);
 console.log(mkdn)

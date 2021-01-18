@@ -1,10 +1,10 @@
-# asdf 
+# ash 
 
-  ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+  ![GitHub license](https://img.shields.io/badge/license-APACHE 2.0-blue.svg)
   
   ## Description
   
-  This project allows users to generate readme files for their application. It uses Node.js
+afds
   
   ## Table of Contents 
   
@@ -30,26 +30,25 @@
   
   ## Usage
   
-  use git clone to pull down the repo 
+  fsd
   
   ## License
   
-  This project is licensed under the MIT license.
+  This project is licensed under the APACHE 2.0 license.
     
   ## Contributing
   
-  users cannot contribute to this repo
+  dont
   
   ## Tests
   
-  To run tests, run the following command:
-  
   ```
-  npm test
+  dont 
   ```
   
-  ## Questions
+## Questions
   
-  If you have any questions about the repo, open an issue or contact me directly at drosenbaum5@gmail.com. You can find more of my work at [drosenbaum5](https://github.com/drosenbaum5/).
+  If you have any questions about the repo, open an issue or contact me directly at ash. 
+  You can find more of my work at [ash](https://github.com/ash/).
   
   

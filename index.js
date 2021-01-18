@@ -4,6 +4,12 @@ const path = require('path');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 const { generate } = require('rxjs');
+const mit = require('./utils/mit.js');
+const apache = require('./utils/apache.js');
+const bsd = require('./utils/bsd.js');
+const gpl = require('./utils/gpl.js');
+
+
 // TODO: Create an array of questions for user input
 const questions = [
 
@@ -74,6 +80,8 @@ function init() {
     inquirer.prompt(questions).then((inquirerResponses) => {
         console.log('Generating  README...');
         console.log(inquirerResponses);
+
+
         const markdown = generateMarkdown(inquirerResponses);
         console.log(markdown);
         fs.writeFile('readme-gen.md', markdown, (err) => console.error(err))
