@@ -3,11 +3,6 @@ const fs = require('fs');
 const path = require('path');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
-const { generate } = require('rxjs');
-const mit = require('./utils/mit.js');
-const apache = require('./utils/apache.js');
-const bsd = require('./utils/bsd.js');
-const gpl = require('./utils/gpl.js');
 
 
 // TODO: Create an array of questions for user input
@@ -66,14 +61,18 @@ const questions = [
         type: 'input',
         name: 'email',
         message: 'What is your email address?'
-
     },
-
+    {
+        type: 'input',
+        name: 'filename',
+        message: 'What to name file?',
+        default: 'README-GEN.md',
+    },
 ];
 
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+
+
 
 // TODO: Create a function to initialize app
 function init() {
@@ -84,7 +83,10 @@ function init() {
 
         const markdown = generateMarkdown(inquirerResponses);
         console.log(markdown);
-        fs.writeFile('readme-gen.md', markdown, (err) => console.error(err))
+
+        fs.writeFile(inquirerResponses.filename,
+            markdown,
+            (err) => console.error(err));
     });
 }
 
